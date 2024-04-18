@@ -97,8 +97,8 @@ function populateUI(data) {
 
 const locationPointer = document.querySelector(".location-pointer");
 
-function pointerPlacement(AQIValue) {
+function pointerPlacement(AQIValue){
     const parentWidth = locationPointer.parentElement.scrollWidth;
-    locationPointer.style.transform = `translateX(${(AQIValue / 500) * parentWidth}px) rotate(180g)`;
+    locationPointer.style.transform = `translateX(${(AQIValue / 500) * parentWidth}px) rotate(180deg)`
 }
 
