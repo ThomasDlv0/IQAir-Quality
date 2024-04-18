@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QIair</title>
+  </head>
+  <body>
+    <div class="background-layer"></div>
+    <div class="app-container">
+      <h1>Qualité de l'air</h1>
+      <div class="information-block">
+        <div class="loader active">
+          <img src="public/biodegradable.svg" alt="loader icon" class="loader-logo">
+        </div>
+
+        <img src="public/magnifying-glass.svg" alt="feeling icon" class="emoji-logo">
+        <p class="user-information">...</p>
+
+        <table>
+          <tr>
+            <th class="label">Ville</th>
+            <td class="city-name">...</td>
+          </tr>
+          <tr>
+            <th class="label">Info pullution</th>
+            <td class="pollution-info">...</td>
+          </tr>
+          <tr>
+            <th class="label">Index qualité de l'air</th>
+            <td class="pollution-value"></td>
+          </tr>
+        </table>
+
+        <p class="scale-bar-text">Graduation pollution</p>
+        <div class="scale-bar">
+          <img src="public/location.svg" alt="location" class="location-pointer">
+          <div class="scale-section"></div>
+          <div class="scale-section"></div>
+          <div class="scale-section"></div>
+          <div class="scale-section"></div>
+          <div class="scale-section"></div>
+          <div class="scale-section"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
